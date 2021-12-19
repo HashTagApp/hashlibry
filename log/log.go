@@ -3,6 +3,7 @@ package log
 import (
 	"context"
 	"fmt"
+	. "github.com/logrusorgru/aurora"
 	"io"
 	"log"
 	"os"
@@ -20,6 +21,7 @@ func Fatal(message interface{}, params ...interface{}) {
 
 func Error(message interface{}, params ...interface{}) {
 	StdLogger.Error(message, params...)
+	fmt.Println("Hello,", Magenta("Aurora"))
 }
 
 func Warn(message interface{}, params ...interface{}) {
