@@ -1,4 +1,3 @@
-
 module github.com/HashTagApp/hashlibry
 
 go 1.17
